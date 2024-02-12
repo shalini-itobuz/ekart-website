@@ -12,6 +12,8 @@ body {
 
 }
 
+
+
 header {
     display: grid;
     grid-template-columns: 1fr 50px;
@@ -22,6 +24,11 @@ header .shopping {
     position: relative;
     text-align: right;
 
+}
+
+.register-btn {
+    width: 90px;
+    height: 20px;
 }
 
 header .shopping img {
@@ -36,8 +43,8 @@ header .shopping span {
     align-items: center;
     color: #fff;
     position: absolute;
-    top: -5px;
-    left: 80%;
+    top: -22px;
+    left: 99%;
     padding: 3px 10px;
 }
 

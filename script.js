@@ -127,3 +127,15 @@ function changeQuantity(key, quantity) {
   localStorage.setItem('listCards', JSON.stringify(listCards));
 }
 initApp();
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const registerButton = document.querySelector('.register-btn');
+
+  registerButton.addEventListener('click', function() {
+      window.location.href = 'register.html';
+  });
+});
