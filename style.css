@@ -9,6 +9,7 @@ body {
     width: 1000px;
     margin: auto;
     transition: 0.5s;
+
 }
 
 header {
@@ -20,6 +21,7 @@ header {
 header .shopping {
     position: relative;
     text-align: right;
+
 }
 
 header .shopping img {
@@ -84,6 +86,14 @@ header .shopping span {
     background-color: black;
     height: 100vh;
     transition: 0.5s;
+}
+
+.add-to-cart {
+    cursor: pointer;
+}
+
+.list .item button:hover {
+    background-color: orange;
 }
 
 .active .card {

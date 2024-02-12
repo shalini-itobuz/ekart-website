@@ -62,9 +62,10 @@ function reloadCart() {
   let count = 0;
   let totalPrice = 0;
   listCards.forEach((value, key) => {
+    if (value != null) {
     totalPrice = totalPrice + value.price;
     count = count + value.quantity;
-    if (value != null) {
+    
       let newDiv = document.createElement('li');
     
       // Creating image div
@@ -88,6 +89,8 @@ function reloadCart() {
       minusButton.onclick = function() {
         changeQuantity(key, value.quantity - 1);
       };
+
+      //Creating quantity div
       let countDiv = document.createElement('div');
       countDiv.classList.add('count');
       countDiv.textContent = value.quantity;
